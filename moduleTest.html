@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Module</title>
+</head>
+<body>
+    <h1>Teste de Design Pattern</h1>
+    <h2>Module</h2>
+    <script>
+        alert("Called");
+
+        var Counter = (function(){
+            var count = 0;
+        
+            return {
+                count: function() {
+                return count;
+                }
+        
+            , increment: function() {
+                return count += 1;
+                }
+            };
+        })();
+
+    </script>
+</body>
